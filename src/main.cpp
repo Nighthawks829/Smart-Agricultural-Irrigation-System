@@ -88,7 +88,7 @@ void onOTAEnd(bool success)
 String getSensorReadings()
 {
   dhtSensorTemperatureValue = dht.readTemperature();
-  dhtSensorTemperatureValue = dht.readHumidity();
+  dhtSensorHumidityValue = dht.readHumidity();
   // soilMoistureSensorValue = digitalRead(soilMoistureSensorPin);
   soilMoistureSensorValue = 0;
   waterLevelSensorValue = analogRead(waterLevelSensorPin);
